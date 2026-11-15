@@ -26,6 +26,8 @@ def service(ch):
             return False
         elif num == 1:
             afficher(ch)
+        elif num == 2:
+            rechercher(ch)
         elif num == 3:
             modifier(ch)
         elif num == 4:
@@ -37,6 +39,15 @@ def service(ch):
 
 def afficher(ch):
     print(ch)
+
+
+def rechercher(ch):
+    note = int(input("donner le N ° de la note "))
+    list = ch.split("\n")
+    if list[note - 1] != "":
+        print(f"la Note N ° {note} existe")
+    else:
+        print(f"la Note N ° {note} n'existe pas")
 
 
 def modifier(ch):
