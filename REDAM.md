@@ -40,4 +40,4 @@ git commit -m "docs: ajouter le fichier README.md explicatif"
 3. Regardez tout en haut à droite de la fenêtre et cliquez sur le bouton **« Run Python File »** (la petite flèche de lecture **▷**).
 4. Une fenêtre de terminal va s'ouvrir en bas : cliquez dedans pour répondre aux questions du programme et gérer vos tâches.
 
-## ce traville a été développer par MESTAYSSER AMAN ALLAH
+## ce travail a été développer par MESTAYSSER AMAN ALLAH
