@@ -19,9 +19,22 @@ Le code dans `main.py` a été organisé étape par étape :
 2. **Enregistrer les notes :** Avec `saisir_les_taches()`, le programme récupère chaque tâche et les range les unes à la suite des autres.
 3. **Gérer les notes :** Création d'une fonction pour chaque action (afficher, rechercher, modifier, supprimer, marquer). Pour modifier une ligne précise, le programme découpe le texte ligne par ligne, fait le changement, puis recolle le tout.
 4. **Créer le menu :** La fonction `service()` affiche les choix possibles (de `0` à `5`) et lance l'action demandée.
+# 1. Initialiser le dépôt Git dans le dossier
+git init
+
+# 2. Ajouter uniquement le fichier Python principal
+git add main.py
+
+# 3. Enregistrer le premier commit
+git commit -m "feat: ajouter le code de base du gestionnaire de tâches (main.py)"
+
+# 1. Ajouter le fichier README.md
+git add README.md
+
+# 2. Enregistrer le deuxième commit
+git commit -m "docs: ajouter le fichier README.md explicatif"
 
 ## Comment lancer le programme sur VS Code
-
 1. Ouvrez **Visual Studio Code**.
 2. Ouvrez le dossier de votre projet, puis cliquez sur le fichier **`main.py`** pour l'afficher à l'écran.
 3. Regardez tout en haut à droite de la fenêtre et cliquez sur le bouton **« Run Python File »** (la petite flèche de lecture **▷**).
