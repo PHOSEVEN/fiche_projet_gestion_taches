@@ -8,7 +8,7 @@ def saisir_N():
 def saisir_les_taches(n):
     ch = ""
     for i in range(n):
-        ch += f"la NOTE N°{i} est : " + input(f"donner la tâche N°{i} ") + "\n"
+        ch += f"la NOTE N°{i+1} est : " + input(f"donner la tâche N°{i+1} ") + "\n"
     return ch
 
 
@@ -30,8 +30,10 @@ def service(ch):
             rechercher(ch)
         elif num == 3:
             modifier(ch)
-        else:
+        elif num == 4:
             supprimer(ch)
+        else:
+            marquer(ch)
         nb += 1
 
 
@@ -65,6 +67,15 @@ def supprimer(ch):
     list[note - 1] = ""
     ch = "\n".join(list)
     print("suppression avec succès")
+    print(ch)
+    return ch
+
+
+def marquer(ch):
+    note = int(input("donner le N ° de la note "))
+    list = ch.split("\n")
+    list[note - 1] = list[note - 1] + "    *****épingler*****"
+    ch = "\n".join(list)
     print(ch)
     return ch
 
