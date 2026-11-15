@@ -30,10 +30,8 @@ def service(ch):
             rechercher(ch)
         elif num == 3:
             modifier(ch)
-        elif num == 4:
-            supprimer(ch)
         else:
-            marquer(ch)
+            supprimer(ch)
         nb += 1
 
 
@@ -67,15 +65,6 @@ def supprimer(ch):
     list[note - 1] = ""
     ch = "\n".join(list)
     print("suppression avec succès")
-    print(ch)
-    return ch
-
-
-def marquer(ch):
-    note = int(input("donner le N ° de la note "))
-    list = ch.split("\n")
-    list[note - 1] = list[note - 1] + "    *****épingler*****"
-    ch = "\n".join(list)
     print(ch)
     return ch
 
